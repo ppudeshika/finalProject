@@ -1,0 +1,39 @@
+
+POST http://localhost:3000/push
+Content-Type: application/json
+
+{
+  "email": "user@example.com",
+  "job_title": "Senior Developer",
+  "skill_level": "Advanced",
+  "age": 32,
+  "height": 180,
+  "weight": 75
+}
+
+
+
+GET request with the email parameter to retrieve the details of a specific user:
+
+http
+Copy code
+GET http://localhost:3000/users/user@example.com
+
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "email": "user@example.com",
+  "password": "secretpassword"
+}
+
+
+To authenticate a user:
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email": "user@example.com",
+  "password": "secretpassword"
+}
