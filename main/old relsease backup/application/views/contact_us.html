@@ -1,0 +1,752 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Contact us</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+   <!-- Main CSS File -->
+
+<style>
+  .navbar {
+  padding-top:  0%;
+  margin-top: 0%;
+  float:right;
+  position: relative;
+  top: -30px;
+  margin-right: 10px;
+}
+body, html {
+ 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("imeges/pexels-karolina-grabowska-4386467.jpg");
+
+  min-height: 720px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container4 {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 600px;
+  padding: 16px;
+  background-color: rgb(162, 224, 235);
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.topicc{
+    margin: 20px;
+    font-size: 60px;
+    text-align: left;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*-----------general---------------*/
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+  }
+  
+  a {
+    color: #3fbbc0;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #65c9cd;
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto", sans-serif;
+  }
+
+
+.top
+{
+    text-align-last: right;
+    font-size:large;
+    background: #3fbbc0;
+    border-radius: 4px;
+    color: #fff;
+    
+}
+
+#header {
+    background: #fff;
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 20px 0;
+    top: 40px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  --------------------------------------------------------------*/
+  /**
+  * Desktop Navigation 
+  */
+  .logo
+  {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    align-self: start;
+  }
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: left;
+    float: left;
+  }
+
+  .navbar a, .navbar a:focus {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    color: #626262;
+    white-space: nowrap;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-weight: 500;
+    float: left;
+  }
+  .navbar a i, .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+    float: left;
+  }
+  .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    color: #3fbbc0;
+  }
+ 
+  
+  .appointment-btn {
+    margin-left: 25px;
+    background: #3fbbc0;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    display: inline-block;
+  }
+  .appointment-btn:hover {
+    background: #65c9cd;
+    color: #fff;
+  }
+
+  
+  .mobile-nav-toggle {
+    color: #555555;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: 0.5s;
+  }
+  .mobile-nav-toggle.bi-x {
+    color: #fff;
+  }
+  
+  @media (max-width: 991px) {
+    .mobile-nav-toggle {
+      display: block;
+    }
+  
+    .navbar ul {
+      display: none;
+    }
+  }
+  .navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(60, 60, 60, 0.9);
+    transition: 0.3s;
+    z-index: 999;
+  }
+  .navbar-mobile .mobile-nav-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .navbar-mobile ul {
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.3s;
+  }
+  .navbar-mobile a, .navbar-mobile a:focus {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #555555;
+  }
+  .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+    color: #3fbbc0;
+  }
+  .navbar-mobile .dropdown ul {
+    position: static;
+    display: none;
+    margin: 10px 20px;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 1;
+    visibility: visible;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  }
+  .navbar-mobile .dropdown ul li {
+    min-width: 200px;
+  }
+  .navbar-mobile .dropdown ul a {
+    padding: 10px 20px;
+  }
+  .navbar-mobile .dropdown ul a i {
+    font-size: 12px;
+  }
+  .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+    color: #3fbbc0;
+  }
+  .navbar-mobile .dropdown > .dropdown-active {
+    display: block;
+  }
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* The image used */
+    background-image: url("imeges/national-cancer-institute-uVnRa6mOLOM-unsplash.jpg");
+    
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    
+    /* Full height */
+    height: 50%; 
+    margin-top: 50px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+   /* form */ 
+.form{
+    margin: 30px;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container2 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+   /*footer*/
+.footer-distributed{
+	background: rgb(1, 39, 61);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+
+
+.footer-distributed h3{
+	color:  #115391;
+	font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  rgb(250, 248, 248);
+	font-size: 20px;
+	font-weight: normal;
+	margin: 0;
+}
+
+
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 20px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:20px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 15px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+.footer2 {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+
+  
+
+
+</style>
+
+
+</head>
+<body>
+     <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="top align-items-center fixed-top">
+    <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+      <div class="align-items-center d-none d-md-flex">
+        <i class="bi bi-clock"></i> Monday - Saturday, 8.00 A.M. - 10.00 P.M.
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="bi bi-phone"></i> Call us now +94 11 5522777
+      </div>
+    </div>
+  </div>
+
+
+      <!--header-->
+        <header id="header" class="fixed-top margin:10px 10px 10px 10px">
+          <div class="container d-flex align-items-center">
+              <h1 class="logo col-md-12 fl text-center"><a href="index.html">HealthyWave</a></h1>
+              <nav id="navbar" class="navbar order-last order-lg-0 align-items-md-stretch">
+              <div class="list">
+              <ul>
+                <div class="col-md-1">
+                    <li><a class="nav-link scrollto" href="Index.html">Home</a></li>
+                  </div>   
+                  <div class="col-md-1">
+                    <li><a class="nav-link scrollto" href="About us.html">About</a></li>
+                  </div>
+                  <div class="col-md-1">
+                    <li><a class="nav-link scrollto" href="services.html">Services</a></li>
+                  </div> 
+                    <div class="col-md-1">
+                    <li><a class="nav-link scrollto" href="department 2.html">Departments</a></li>
+                  </div> 
+                  <div class="col-md-1">
+                    <li><a class="nav-link scrollto" href="Doctors.html">Doctors</a></li>
+                  </div>
+                  <div class="col-md-1">
+                    <li><a class="nav-link scrollto" href="pre Registration.html">Pre Registration</a></li>
+                  </div>
+                  <div class="col-md-1">
+                    <li><a class="nav-link scrollto" href="../views/contact_us.html">Contact</a></li>
+                    
+                </ul>
+          </div>
+            
+            </nav> <!--end navi bar-->
+          
+          </div>
+      </header>
+
+<!--=============picture===============-->
+    <div class="bg-image"></div>
+        <div class="bg-text">
+            <h1 style="font-size:50px">CONTCT US</h1>
+        <p>Find a Doctor.</br> Book an Appointment. </br>Pay easy.</p>
+    </div>
+
+<!--=============form=================-->
+<section>
+    <h1 class="topicc">CONTACT US</h1>
+    <div class="bg-img">
+      <form action="/action_page.php" class="container4">
+        <h1>Details</h1>
+    
+        <label for="email"><b>First Name</b></label>
+        <input type="text" placeholder="First Name" name="email" required>
+    
+        <label for="email"><b>Last Name</b></label>
+        <input type="text" placeholder="Last Name" name="email" required>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+    
+        <label for="psw"><b>Telephone Number</b></label>
+        <input type="password" placeholder="Telephone Number" name="psw" required>
+    
+        <label for="psw"><b>messege</b></label>
+        <input type="password" placeholder="Enter Your Messege" name="psw" required>
+    
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+    
+    </section>
+<!--=================Footer================-->
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+  
+            <h3>HealthyWave<span></span></h3>
+  
+            <p class="footer-links">
+              <a href="#" class="link-1">About Us</a>
+              
+              <a href="#">Services</a>
+          
+              <a href="#">Department</a>
+            
+              <a href="#">Doctor</a>
+              
+              
+              <a href="#">Contact</a>
+            </p>
+  
+      <p class="footer-company-name">Smile group of company since 1989</p>
+    </div>
+  
+        <div class="footer-center">
+  
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>No 550, Bambalapitiya</span> Colombo 02, Sri Lanka</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+94 110 550 678 42</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="">smilehospitals.com</a></p>
+          </div>
+  
+        </div>
+  
+    <div class="footer-right">
+  
+      <p class="footer-company-about">
+        <span>About the Group of company</span>
+        Hospital, an institution that is built, staffed, and equipped for the diagnosis of disease; for the treatment, both medical and surgical, of the sick and the injured; and for their housing during this process.
+      </p>
+  
+      <div class="footer-icons">
+  
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+  
+      </div>
+  
+    </div>
+  
+  </footer>
+  <footer>
+    <div class="footer2">
+    <p>All rigts reserved<br>
+    <a href="">healthwavegroupofcompany.com</a></p>
+  </div>
+  </footer>
+  
+
+    <body>
+
+</body>
+
+</html>
