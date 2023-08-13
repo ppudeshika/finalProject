@@ -1,6 +1,6 @@
-### db api request template
+# db api request template
 
-# Resgister New User to Database
+## Resgister New User to Database
 ```
 POST http://localhost:3000/register
 
@@ -10,7 +10,7 @@ POST http://localhost:3000/register
 }
 ```
 
-# To authenticate a user with database
+## To authenticate a user with database
 ```
 POST http://localhost:3000/login
 Content-Type: application/json
@@ -21,7 +21,7 @@ Content-Type: application/json
 }
 ```
 
-# Push User Informations to Database
+## Push User Informations to Database
 
 ```
 POST http://localhost:3000/push
@@ -37,7 +37,7 @@ Content-Type: application/json
 }
 ```
 
-# Grab All user Informations
+## Grab All user Informations
 ```
 GET http://localhost:3000/users/user@example.com
 
